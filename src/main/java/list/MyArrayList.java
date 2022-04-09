@@ -2,10 +2,9 @@ package list;
 
 import java.util.Arrays;
 
-import static javax.swing.GroupLayout.DEFAULT_SIZE;
-
 public class MyArrayList<T> implements IList<T> {
 
+    private static final int DEFAULT_SIZE = 50;
     private int size;
     private T[] elements;
 
