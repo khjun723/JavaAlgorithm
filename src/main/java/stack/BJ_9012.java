@@ -38,7 +38,7 @@ public class BJ_9012 {
         int N = scan.nextInt(); //입력받을 데이터 개수
 
         for (int i = 0; i < N; i++) {
-            foo(scan.next());
+            foo(scan.nextLine());
         }
 
 
