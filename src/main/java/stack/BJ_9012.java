@@ -1,6 +1,8 @@
 package stack;
 
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Stack;
 
 public class BJ_9012 {
@@ -30,15 +32,15 @@ public class BJ_9012 {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
 
-        Scanner scan = new Scanner(System.in);
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-        int N = scan.nextInt(); //입력받을 데이터 개수
+        int N = Integer.parseInt(br.readLine()); //입력받을 데이터 개수
 
         for (int i = 0; i < N; i++) {
-            foo(scan.nextLine());
+            foo(br.readLine());
         }
 
 
