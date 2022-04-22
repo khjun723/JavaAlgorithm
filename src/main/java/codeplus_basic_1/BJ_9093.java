@@ -8,6 +8,7 @@ public class BJ_9093 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringBuffer sb;
+        Stack<Character> stack;
 
         int T = Integer.parseInt(br.readLine());
 
@@ -16,7 +17,7 @@ public class BJ_9093 {
         while(T-- > 0){
             sb = new StringBuffer();
             String str = br.readLine() + "\n";
-            Stack<Character> stack = new Stack<>();
+            stack = new Stack<>();
             for ( int j = 0; j < str.length(); j++) {
                 if(str.charAt(j) == ' ' || str.charAt(j) == '\n'){
                     while(!stack.empty()) {

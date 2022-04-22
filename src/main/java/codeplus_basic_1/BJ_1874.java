@@ -14,7 +14,7 @@ public class BJ_1874 {
         int n = Integer.parseInt(br.readLine());
         stk.push(1);
         sb.append("+\n");
-        int tmp = stk.peek();
+        int tmp = 1;
         boolean check = false;
         for (int i = 1; i <= n; i++) {
             int input = Integer.parseInt(br.readLine());
